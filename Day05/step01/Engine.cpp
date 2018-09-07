@@ -45,11 +45,12 @@ int Engine::Input()
 void Engine::Process(int KeyCode)
 {
 	//캐릭터 이동
-	player->Move(KeyCode, map);
+	player->Move(map,KeyCode);
 	monster->Move(map);
 
 	//게임 판정 로직
 	IsComplete();
+	IsFail();
 	IsQuit(KeyCode);
 
 }
@@ -60,15 +61,12 @@ void Engine::IsQuit(int KeyCode)
 	{
 		bIsRunnging = false;
 	}
-	else if (player->x == monster->X && player->y == monster->Y)
-	{
-		bIsRunnging = false;
-	}
+
 }
 
 void Engine::IsComplete()
 {
-	if (player->x == goal->X && player->y == goal->Y)
+	if (player->X== goal->X && player->Y == goal->Y)
 	{
 		//승리화면 출력
 		bIsRunnging = false;
@@ -119,5 +117,13 @@ void Engine::InitMonstersPosition()
 				monster->Y = y;
 			}
 		}
+	}
+}
+
+void Engine::IsFail()
+{
+	 if (player->X == monster->X && player->Y == monster->Y)
+	{
+		bIsRunnging = false;
 	}
 }

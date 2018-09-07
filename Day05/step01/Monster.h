@@ -1,14 +1,14 @@
 #pragma once
-class Monster
+#include"Character.h"
+class Monster :public Character
 {
 public:
 	Monster();
 	~Monster();
 
-	int X;
-	int Y;
-	void Init();
-	void Move(class Map* map);
-	void Draw();
+	//int X;
+	//int Y;
+	virtual void Move(class Map* map, int KeyCode=0) override;
+	virtual void Draw() override;
 };
 

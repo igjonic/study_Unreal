@@ -15,51 +15,31 @@ Monster::~Monster()
 {
 }
 
-void Monster::Init()
-{
-}
 
-void Monster::Move(class Map* map)
+void Monster::Move(class Map* map, int KeyCode)
 {
 	int dir = rand() % 4;
-	if (dir == 0) //UP
+	switch (dir)
 	{
-		if (!map->IsWall(X, Y - 1))
-		{
-			Y--;
-		}
+		case 0:
+			KeyCode = UP;
+			break;
+		case 1:
+			KeyCode = DOWN;
+			break;
+		case 2:
+			KeyCode = LEFT;
+			break;
+		case 3:
+			KeyCode = RIGHT;
+			break;
 	}
-	else if (dir == 1) //Down
-	{
-		if (!map->IsWall(X, Y + 1))
-		{
-			Y++;
-		}
-	}
-	else if (dir == 2) //Left
-	{
-		if (!map->IsWall(X - 1, Y))
-		{
-			X--;
-		}
-	}
-	else if (dir == 3) //Right
-	{
-		if (!map->IsWall(X + 1, Y))
-		{
-			X++;
-		}
-	}
+	Character::Move(map,KeyCode);
 }
 
 void Monster::Draw()
 {
-	//커서위치를 플레이어 위치로 변경
-	COORD c;
-	c.X = X;
-	c.Y = Y;
-	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), c);
-
+	Character::Draw();
 	//콘솔 출력 색상 변경(Player색깔)
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 4);
 	std::cout << "M";

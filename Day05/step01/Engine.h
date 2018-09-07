@@ -21,7 +21,7 @@ private:
 	void Render();
 	void InitGoalPosition();
 	void InitMonstersPosition();
-
+	void IsFail();
 	bool bIsRunnging;
 };
 

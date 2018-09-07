@@ -1,21 +1,20 @@
 #pragma once
 #include "Job.h"
+#include "Character.h"
 
-class Player
+class Player:public Character
 {
 public:
 	Player();
 	~Player();
 
-	int x;
-	int y;
+	//int x;
+	//int y;
 
 	EJob job;
 
-	void Move(int KeyCode, class Map* map);
+	virtual void Draw() override;
 
-	void Draw();
-
-	void Init();
+	virtual void Init() override;
 };
 
