@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\stl\junios\ds\day06\project1\project1\main.cpp(66): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+c:\stl\junios\ds\day06\project1\project1\main.cpp(73): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+  Project1.vcxproj -> C:\STL\Junios\DS\Day06\Project1\Debug\Project1.exe
