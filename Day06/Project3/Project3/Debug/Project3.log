@@ -1,13 +1,8 @@
-﻿  Character.cpp
-  Engine.cpp
-c:\stl\junios\ds\day06\project3\project3\engine.cpp(21): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-c:\stl\junios\ds\day06\project3\project3\engine.cpp(46): warning C4018: '<': signed/unsigned mismatch
-c:\stl\junios\ds\day06\project3\project3\engine.cpp(83): warning C4018: '<': signed/unsigned mismatch
-c:\stl\junios\ds\day06\project3\project3\engine.cpp(92): warning C4018: '<': signed/unsigned mismatch
-  Goblin.cpp
-  main.cpp
-  Monster.cpp
+﻿  Engine.cpp
+c:\users\stl\study_unreal\day06\project3\project3\engine.cpp(21): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\stl\study_unreal\day06\project3\project3\engine.cpp(46): warning C4018: '<': signed/unsigned mismatch
+c:\users\stl\study_unreal\day06\project3\project3\engine.cpp(83): warning C4018: '<': signed/unsigned mismatch
+c:\users\stl\study_unreal\day06\project3\project3\engine.cpp(92): warning C4018: '<': signed/unsigned mismatch
   Player.cpp
-  Slime.cpp
   Generating Code...
-  Project3.vcxproj -> C:\STL\Junios\DS\Day06\Project3\Debug\Project3.exe
+  Project3.vcxproj -> C:\Users\stl\Study_Unreal\Day06\Project3\Debug\Project3.exe

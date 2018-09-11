@@ -6,7 +6,7 @@ class Character : public Object
 {
 public:
 	Character();
-	~Character();
+	virtual ~Character();
 
 	virtual void Tick();
 	virtual void Draw();

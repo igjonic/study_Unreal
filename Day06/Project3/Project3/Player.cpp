@@ -10,6 +10,11 @@ Player::Player()
 	SetName("플레이어");
 }
 
+Player::Player(int a)
+{
+	cout << a << endl;
+}
+
 
 Player::~Player()
 {

@@ -45,7 +45,7 @@ Engine::~Engine()
 
 	for (int i = 0; i < characters.size(); ++i)
 	{
-		//delete characters[i];
+		delete characters[i];
 	}
 }
 

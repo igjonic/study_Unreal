@@ -6,7 +6,8 @@ class Player: public Character
 {
 public:
 	Player();
-	~Player();
+	Player(int a);
+	virtual ~Player();
 
 	void Input();
 	virtual void Tick() override;
