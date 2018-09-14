@@ -1,0 +1,5 @@
+﻿  List.cpp
+Review_Step01.obj : error LNK2019: unresolved external symbol "public: __thiscall List<int>::List<int>(void)" (??0?$List@H@@QAE@XZ) referenced in function _main
+Review_Step01.obj : error LNK2019: unresolved external symbol "public: __thiscall List<int>::~List<int>(void)" (??1?$List@H@@QAE@XZ) referenced in function _main
+Review_Step01.obj : error LNK2019: unresolved external symbol "public: void __thiscall List<int>::Push_Front(int)" (?Push_Front@?$List@H@@QAEXH@Z) referenced in function _main
+C:\Users\stl\Study_Unreal\Day10\Review_Step01\Debug\Review_Step01.exe : fatal error LNK1120: 3 unresolved externals
