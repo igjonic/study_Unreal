@@ -1,0 +1,6 @@
+﻿  Apple.cpp
+c:\users\stl\study_unreal\day04\step02\apple.cpp(12): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  Source.cpp
+c:\users\stl\study_unreal\day04\step02\source.cpp(14): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Generating Code...
+  step02.vcxproj -> C:\Users\stl\Study_Unreal\Day04\step02\Debug\step02.exe
