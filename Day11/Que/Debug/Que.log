@@ -1,0 +1,3 @@
+﻿  main.cpp
+c:\users\stl\study_unreal\day11\que\main.cpp(104): warning C4715: 'RSearch2': not all control paths return a value
+  Que.vcxproj -> C:\Users\stl\Study_Unreal\Day11\Que\Debug\Que.exe
